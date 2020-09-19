@@ -5,6 +5,6 @@
 # compiles it, runs it and clears the output file
 if [ $# -eq 1 ]
   then
-    /bin/g++ $1 && ./a.out
+    /bin/g++ $1 -Werror -Wall -Wextra && ./a.out
 fi
 rm -f a.out
