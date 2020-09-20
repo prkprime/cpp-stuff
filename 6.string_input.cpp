@@ -6,8 +6,12 @@
 using namespace std;
 
 int main() {
-    string s1 = "Hello World";
-    cout << "s1 : " << s1 << endl;
+    string s1 = "Hello World"; // c-like initialization
+    string s4 ("Constructor initialization"); // constructor initialization
+    string s5 {"Uniform Initialization"}; // uniform initialization
+    cout << "s1 : " << s1
+    << "\ns4 : " << s4
+    << "\ns5 : " << s5 << endl;
 
     string s2;
     cout << "Enter a string : ";
